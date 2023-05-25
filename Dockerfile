@@ -3,7 +3,6 @@ FROM ubuntu:22.10
 ENV DEBIAN_FRONTEND noninteractive
 RUN \
     apt-get -y update && \
-    apt-get -y dist-upgrade && \
     apt-get -y install build-essential yasm nasm \
         xxd pkgconf curl wget unzip git subversion mercurial \
         autoconf automake libtool libtool-bin autopoint gettext cmake clang meson ninja-build \
